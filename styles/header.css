@@ -1,0 +1,42 @@
+
+.cabecalho__menu-hamburguer {
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.cabecalho {
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*ele libera a opção de você colocar os atributos como top, left, right e bottom*/
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    
+}
+
+.container__imagem {
+    padding: 1em;
+}
+
+/*menu do header*/
+.lista-menu {
+    display: none;
+    /*ele permite que você movimente o seu elemento de acordo com outro que veio antes que é o pai que esteja position diferente de static que é a padrão*/
+    position: absolute;
+    /*colocando ele em baixo*/
+    top: 100%;
+}
+
+/*o :checked é uma pseudo classe ele detecta se está preenchido o chacekbox e o "~" ele é um combinador css que procura um outro elemento em seguida do anterior a ele, esse exemplo e o que chega mais perto de uma condicional css*/
+.container__botao:checked~.lista-menu {
+    display: block;
+}
