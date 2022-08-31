@@ -73,7 +73,16 @@
     text-decoration: none;
 }
 
-
+/*segundo carrosel*/
+.segundo-carrossel__titulo{
+    color: var(--laranja);    
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 1em 0 0.5em 0;
+    background-color: var(--branco);
+}
 
 
 
