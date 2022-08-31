@@ -37,7 +37,7 @@
     display: flex;
 }
 
-.card {
+.card, .segundo-card {
     background: var(--branco);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -48,17 +48,19 @@
 .descricao__titulo {
     color: var(--laranja);
     font-weight: 700;
+    margin: .5em;
 }
 
 .descricao__titulo-livro {
     color: var(--azul);
     font-size: 18px;
     font-weight: 700;
-    margin: 0.5em;
+    margin: .5em;
 }
 
-.descricao-texto {
+.descricao__texto {
     font-size: 14px;
+    margin: .5em;
 }
 
 .botoes__item {
@@ -74,6 +76,15 @@
 }
 
 /*segundo carrosel*/
+.estrelas {
+    margin: .5em;
+}
+
+.segundo-card__descricao {
+    display: flex;
+    justify-content: space-between;
+}
+
 .segundo-carrossel__titulo{
     color: var(--laranja);    
     text-align: center;
@@ -84,19 +95,28 @@
     background-color: var(--branco);
 }
 
+.descricao__titulo-autora {
+    color: var(--laranja);
+    font-weight: 700;
+    margin: .5em;
+}
 
+.descricao__nome-autora  {
+    color: var(--azul);
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0.5em;
+}
 
+.botoes__ancora-autora {
+    background-color: var(--laranja);
+    padding: 1em 2.2em;
+    color: var(--branco);
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 1em;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.botoes__item-autora {
+    margin: 1em 0.5em;
+}
