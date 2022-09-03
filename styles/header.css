@@ -114,4 +114,15 @@
     .cabecalho__menu-hamburguer {
         display: none;
     }
+
+    .opcoes__botao:checked ~ .lista-menu {
+        display: block;
+        /*deixa a largura um pouco menor*/
+        width: auto;
+    }
+
+    .opcoes__botao {
+        /*sumindo com o botão*/
+        display: none;
+    }
 }
