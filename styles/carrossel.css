@@ -1,4 +1,3 @@
-
 .carrossel__titulo {
     color: var(--laranja);
     background-color: var(--branco);
@@ -78,4 +77,29 @@
 /*segundo carrosel*/
 .estrelas {
     margin: .5em;
+}
+
+@media screen and (min-width: 1024px) {    
+    .carrossel__titulo {
+        font-size: 26px;
+    }
+
+    .swiper-pagination {
+        margin: 2em 0 4em 0;
+    }
+
+    .swiper {
+        width: 60%;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: block;
+        top: 60%;
+    }
+
+    .card {
+        width: 40%;
+        margin: 2em auto;
+    }
 }
