@@ -77,6 +77,7 @@
 
 /*iniciando a media queries, layout tablet*/
 @media screen and (min-width: 1020px) {
+    /*header*/
     .container__titulo,
     .container__titulo--negrito {
         font-family: var(--fonte-secundaria);
