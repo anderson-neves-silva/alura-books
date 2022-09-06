@@ -74,6 +74,10 @@
     display: none;
 }
 
+.container__texto {
+    display: none;
+}
+
 /*iniciando a media queries, layout tablet*/
 @media screen and (min-width: 1020px) {
     /*header*/
@@ -124,5 +128,27 @@
     .opcoes__botao {
         /*sumindo com o botão*/
         display: none;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .container__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .cabecalho {
+        padding: 0 2em;
+    }
+
+    /*opcoes sendo um flex item quando colocamos uma margem auto ele tenta preencher toda a direita com a margem, com isso todos os itens foram empurrados para a esquerda*/
+    .opcoes {
+        margin-right: auto;
+    }
+
+    .container__texto {
+        display: block;
     }
 }
