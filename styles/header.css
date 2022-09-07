@@ -87,7 +87,7 @@
 }
 
 /*iniciando a media queries, layout tablet*/
-@media screen and (min-width: 1020px) {
+@media screen and (min-width: 1024px) {
     /*header*/
     .container__titulo,
     .container__titulo--negrito {
@@ -136,6 +136,26 @@
     .opcoes__botao {
         /*sumindo com o botão*/
         display: none;
+    }
+
+    .opcoes__botao:checked ~ .opcoes__rotulo >  .opcoes__item {
+        background: var(--azul-degrade);
+        color: var(--branco);
+    }
+
+    .opcoes__item {
+        padding: 2em 1em;
+    }
+
+    /*evento de passar o mause*/
+    .lista-menu__item:hover {
+        background: var(--azul-degrade);
+    }
+
+    /*mudando a cor da letra no evento*/
+    .lista-menu__item:hover > .lista-menu__link {
+        -webkit-text-fill-color: var(--branco);
+        text-decoration: none;
     }
 }
 
