@@ -1,4 +1,3 @@
-
 /*importando o css do header que está na pasta styles, Obs. assim no nosso index fica com poucas linhas de importação de css e nossa página carrega bem mais rápido*/
 @import url("styles/header.css");
 @import url("styles/banner.css");
